@@ -454,8 +454,8 @@ class _LoginScreen3State extends State<LoginScreen3>
                                     child: new FlatButton(
                                       onPressed: ()=> _signIn()
                                         .then((FirebaseUser user)=>print(user))
-                                        .catchError((e)=>print(e))
-                                        .then(),
+                                        .catchError((e)=>print(e)),
+                                        // TODO: add nav for homepage
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
