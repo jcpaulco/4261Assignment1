@@ -9,3 +9,6 @@ To come:<br />
   - Email Auth using Firebase<br /> 
   - Populate homepage with current weather from <a href="https://openweathermap.org/apid">Open Weather Map</a> <br /> from <a href="https://dragosholban.com/2018/07/01/how-to-build-a-simple-weather-app-in-flutter/"> This tutorial</a>  or <a href="https://pub.dartlang.org/packages/weather/"> here</a> <br />
   - etc...
+
+
+Run using "flutter run"
