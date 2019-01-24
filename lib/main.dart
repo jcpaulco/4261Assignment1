@@ -14,26 +14,26 @@ import 'package:flutter_login_screens/loaders/dot_type.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
-  final FirebaseAuth _auth  = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = new GoogleSignIn();
+  // final FirebaseAuth _auth  = FirebaseAuth.instance;
+  // final GoogleSignIn _googleSignIn = new GoogleSignIn();
 
-  Future<FirebaseUser> _signIn() async{
-    GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
-    GoogleSignInAuthentication gSA = await googleSignInAccount.authentication;
+  // Future<FirebaseUser> _signIn() async{
+  //   GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
+  //   GoogleSignInAuthentication gSA = await googleSignInAccount.authentication;
 
-    FirebaseUser user = await _auth.signInWithGoogle(
-      idToken: gSA.idToken,
-      accessToken: gSA.accessToken
-    );
+  //   FirebaseUser user = await _auth.signInWithGoogle(
+  //     idToken: gSA.idToken,
+  //     accessToken: gSA.accessToken
+  //   );
 
-    print("User Name: ${user.displayName}");
-    return user;
-  }
+  //   print("User Name: ${user.displayName}");
+  //   return user;
+  // }
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Login Screen 1',
+      title: 'Flutter Login Screen 3',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -60,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
         body: Container(
 		      child: LoginScreen3(),

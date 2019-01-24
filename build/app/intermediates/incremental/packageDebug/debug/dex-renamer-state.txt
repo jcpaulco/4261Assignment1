@@ -1,0 +1,4 @@
+#Thu Jan 24 14:32:37 EST 2019
+base.0=/Users/jpaul/Documents/1Spring19/4261/Assignment1/FlutterScreens/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

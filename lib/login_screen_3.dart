@@ -455,7 +455,7 @@ class _LoginScreen3State extends State<LoginScreen3>
                                       onPressed: ()=> _signIn()
                                         .then((FirebaseUser user)=>print(user))
                                         .catchError((e)=>print(e)),
-                                        // TODO: add nav for homepage
+                                        // .then(goToHomePage()),
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
@@ -739,7 +739,6 @@ class _LoginScreen3State extends State<LoginScreen3>
   }
 
   gotoLogin() {
-    //controller_0To1.forward(from: 0.0);
     _controller.animateToPage(
       0,
       duration: Duration(milliseconds: 800),
@@ -748,13 +747,21 @@ class _LoginScreen3State extends State<LoginScreen3>
   }
 
   gotoSignup() {
-    //controller_minus1To0.reverse(from: 0.0);
     _controller.animateToPage(
       2,
       duration: Duration(milliseconds: 800),
       curve: Curves.bounceOut,
     );
   }
+
+  // goToHomePage() {
+  //   _controller.animateToPage(
+  //     3,
+  //     duration: Duration(milliseconds: 800),
+  //     curve: Curves.bounceOut,
+  //   );
+  // }
+
 
   PageController _controller = new PageController(initialPage: 1, viewportFraction: 1.0);
 
